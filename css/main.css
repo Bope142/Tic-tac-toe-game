@@ -512,8 +512,8 @@ body * {
   justify-content: center;
   border-radius: 50%;
   background: #002036;
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   flex: none;
 }
 .modal-result-game .content .body .avatar-result div {
@@ -530,6 +530,11 @@ body * {
   object-fit: cover;
   height: 10rem;
   width: 10rem;
+}
+.modal-result-game .content .body .text-result {
+  font-size: 1.3rem;
+  font-family: "RobotoCondensed-Bold";
+  text-align: center;
 }
 .modal-result-game .content .controll {
   display: flex;
@@ -605,9 +610,12 @@ body * {
 .modal-play-game .content .body .option div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  column-gap: 10px;
   color: #000000;
   font-size: 1rem;
+}
+.modal-play-game .content .body .option div strong {
+  font-weight: bold;
 }
 .modal-play-game .content .body .option div .radio-circle {
   flex: none;
@@ -620,6 +628,8 @@ body * {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: flex-end;
+  margin-left: auto;
 }
 .modal-play-game .content .body .option div .radio-circle .circle-checked {
   background: #003F6C;
@@ -698,6 +708,10 @@ body * {
   flex: none;
   height: auto;
 }
+.play-tab-container .header .player-active {
+  background: #FBB500 !important;
+  transition: all 0.2s linear;
+}
 .play-tab-container .header .player-profil {
   display: flex;
   align-items: center;
@@ -711,6 +725,8 @@ body * {
   font-size: 0.6rem;
   text-align: center;
   font-family: "RobotoCondensed-Regular";
+  background: transparent;
+  transition: all 0.2s linear;
 }
 .play-tab-container .header .player-profil .icon-player {
   display: flex;
@@ -735,6 +751,10 @@ body * {
   grid-gap: 10px;
   flex: none;
 }
+.play-tab-container .grid-section-game .valid-square-win {
+  background: #FBB500 !important;
+  transition: all 0.2s linear;
+}
 .play-tab-container .grid-section-game .square-play {
   border-radius: 0.3rem;
   flex: none;
@@ -746,10 +766,11 @@ body * {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.2s linear;
 }
 .play-tab-container .grid-section-game .square-play svg {
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 .play-tab-container .footer {
   display: flex;

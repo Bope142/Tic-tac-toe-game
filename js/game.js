@@ -249,7 +249,6 @@ const SumDiagonalPlayer = (id) => {
 
 const MultiPlayerProgress = (indexSquare, idPlayer) => {
     indexSquare++
-//    console.log('index square ' + indexSquare)
     switch (indexSquare) {
         case 1: {
             if (idPlayer === 0) {
@@ -375,15 +374,14 @@ const asWin = (idPlayer) => {
     sum = 0
     playCount
     if (SumColumnPlayer(idPlayer)) {
-        //        console.log(`Player ${idPlayer+1} win in Column ${sum}`)
         return true
     } else {
         if (SumRowsPlayer(idPlayer)) {
-            //            console.log(`Player ${idPlayer+1} win in Column ${sum}`)
+ 
             return true
         } else {
             if (SumDiagonalPlayer(idPlayer)) {
-                //                console.log(`Player ${idPlayer+1} win in Column ${sum}`)
+       
                 return true
             } else {
                 if (playCount === 9) {
@@ -397,6 +395,7 @@ const asWin = (idPlayer) => {
         }
     }
 }
+
 const UserPlay = (idPlayer, squareIndex) => {
     if (idPlayer === 0) {
         document.querySelectorAll('.square-play')[squareIndex].innerHTML = `
@@ -409,8 +408,9 @@ const UserPlay = (idPlayer, squareIndex) => {
   <path d="M12 2C6.4889971 2 2 6.4889971 2 12C2 17.511003 6.4889971 22 12 22C17.511003 22 22 17.511003 22 12C22 6.4889971 17.511003 2 12 2 z M 12 4C16.430123 4 20 7.5698774 20 12C20 16.430123 16.430123 20 12 20C7.5698774 20 4 16.430123 4 12C4 7.5698774 7.5698774 4 12 4 z" fill="#FFFFFF" />
 </svg>`
     }
-    document.querySelectorAll('.square-play')[squareIndex].setAttribute('is-played', '0')
+
 }
+
 const resetGame = () => {
     document.querySelectorAll('.square-play').forEach(sqr => sqr.classList.remove('valid-square-win'))
     playCount = 0
@@ -438,18 +438,19 @@ const resetGame = () => {
     playerProgressMultiPlayer.player2.diagonal.diagonal1 = []
     playerProgressMultiPlayer.player2.diagonal.diagonal2 = []
 }
+
 const gameInitial = () => {
     playCount = 0;
     document.querySelectorAll('.square-play').forEach((square, index) => {
         square.addEventListener('click', () => {
             if (MODE_GAME === "SINGLE PLAYER") {
-
-                console.log('000')
+               User_Played(square,index)
+               
             } else {
                 if (playCount < 9) {
                     playCount++;
                 }
-                if (square.getAttribute('is-played') == "0") {
+                if (square.getAttribute('is-played') === "0") {
                     UserPlay(indexPlayer, index)
                     MultiPlayerProgress(index, indexPlayer)
                     if (asWin(indexPlayer)) {

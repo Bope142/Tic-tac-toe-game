@@ -25,8 +25,8 @@ const slideTab = () => {
                 case 0: {
                     resetGame()
                     MODE_GAME = "SINGLE PLAYER";
-                    document.querySelectorAll('.radio-circle span')[1].classList.remove('circle-checked')
-                    document.querySelectorAll('.radio-circle span')[0].classList.add('circle-checked')
+                    document.querySelectorAll('.radio-circle span')[0].classList.remove('circle-checked')
+                    document.querySelectorAll('.radio-circle span')[1].classList.add('circle-checked')
                     document.querySelector('.modal-play-game').classList.toggle('visible')
                 }
                 break;
@@ -39,7 +39,7 @@ const slideTab = () => {
             }
             break;
             case 2: {
-                changeTab(2)
+                document.querySelector('.modal-about-game').classList.toggle('visible')
             }
             break;
             }
@@ -55,8 +55,6 @@ const optionGame = () => {
             document.querySelectorAll('.radio-circle span')[index].classList.add('circle-checked')
 
         })
-
-
     })
 }
 const playGame = () => {
@@ -113,6 +111,12 @@ window.addEventListener('load', () => {
     document.querySelector('.close-mmodal-option').addEventListener('click', () => {
         document.querySelector('.modal-play-game').classList.toggle('visible')
     })
+    document.querySelector('.close-modal').addEventListener('click', () => {
+        document.querySelector('.modal-about-game').classList.remove('visible')
+    })
+	 document.querySelector('.close-mmodal-about').addEventListener('click', () => {
+        document.querySelector('.modal-about-game').classList.remove('visible')
+    })
     optionGame()
     playGame()
     document.querySelector('.btn-back-home').addEventListener('click', () => {
@@ -123,8 +127,7 @@ window.addEventListener('load', () => {
     document.querySelector('.btn-replay').addEventListener('click', () => {
         deleteSquareContent()
         resetGame()
-        indexPlayer = 0
-        palyerSelect(0)
+        replayGame()
         document.querySelector('.modal-result-game').classList.toggle('visible')
     })
 })

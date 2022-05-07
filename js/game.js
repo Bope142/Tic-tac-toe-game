@@ -37,7 +37,7 @@ let playCount = 0
 
 const EqualityGame = () => {
     setTimeout(() => {
-        console.log('No Winner !!!!!!!!!!!!!!!!!!!!!!!')
+        //console.log('No Winner !!!!!!!!!!!!!!!!!!!!!!!')
         document.querySelector('.avatar-result div').innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><radialGradient id="lCSbr2A9DeSL3lYZlpuCGa" cx="568" cy="24" r="18" fx="567.905" fy="16.289" gradientTransform="matrix(-1 0 0 1 592 0)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffe16e"/><stop offset=".629" stop-color="#ffd226"/><stop offset=".75" stop-color="#fdcd23"/><stop offset=".899" stop-color="#f6bd1b"/><stop offset=".999" stop-color="#f0af13"/></radialGradient><circle cx="24" cy="24" r="18" fill="url(#lCSbr2A9DeSL3lYZlpuCGa)"/><path fill="#212121" d="M34.499,27c-0.102,0-0.204-0.031-0.292-0.095C34.18,26.886,31.525,25,27.5,25c-0.24,0-0.446-0.17-0.491-0.405c-0.045-0.235,0.083-0.47,0.306-0.559l5-2c0.254-0.103,0.547,0.022,0.65,0.279c0.103,0.256-0.022,0.547-0.279,0.65l-0.453,0.181c-0.777,0.311-0.742,1.406,0.044,1.692c1.547,0.563,2.452,1.211,2.517,1.258c0.223,0.163,0.272,0.475,0.11,0.698C34.807,26.928,34.654,27,34.499,27z"/><path fill="#212121" d="M13.501,27c0.102,0,0.204-0.031,0.292-0.095C13.82,26.886,16.475,25,20.5,25c0.24,0,0.446-0.17,0.491-0.405c0.045-0.235-0.083-0.47-0.306-0.559l-5-2c-0.254-0.103-0.547,0.022-0.65,0.279c-0.103,0.256,0.022,0.547,0.279,0.65l0.453,0.181c0.777,0.311,0.742,1.406-0.044,1.692c-1.547,0.563-2.452,1.211-2.517,1.258c-0.223,0.163-0.272,0.475-0.11,0.698C13.193,26.928,13.346,27,13.501,27z"/><radialGradient id="lCSbr2A9DeSL3lYZlpuCGb" cx="-190.349" cy="-3.574" r="3.326" gradientTransform="matrix(.0157 1.116 -3.2952 .1212 15.204 244.574)" gradientUnits="userSpaceOnUse"><stop offset=".629" stop-color="#ffe16e"/><stop offset=".871" stop-color="#ffe16e" stop-opacity="0"/></radialGradient><path fill="url(#lCSbr2A9DeSL3lYZlpuCGb)" d="M19.17,34.252c0,0,1.116,0.748,4.83,0.748c3.44,0,4.827-0.748,4.827-0.748s-0.863-1.485-4.827-1.485S19.17,34.252,19.17,34.252z"/><radialGradient id="lCSbr2A9DeSL3lYZlpuCGc" cx="1542.227" cy="-1072.793" r="8.277" gradientTransform="matrix(-.618 0 0 -.3776 977.074 -372.304)" gradientUnits="userSpaceOnUse"><stop offset=".284" stop-color="#cc9000"/><stop offset="1" stop-color="#cc9000" stop-opacity="0"/></radialGradient><path fill="url(#lCSbr2A9DeSL3lYZlpuCGc)" d="M24,34c3.392,0,4.31,0.609,4.31,0.609S27.43,36,24,36s-4.31-1.391-4.31-1.391S20.608,34,24,34z"/><radialGradient id="lCSbr2A9DeSL3lYZlpuCGd" cx="-1909.218" cy="-855.625" r="15.654" gradientTransform="matrix(.35 0 0 -.1877 692.203 -127.043)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1c1911"/><stop offset=".999" stop-color="#171714"/></radialGradient><path fill="url(#lCSbr2A9DeSL3lYZlpuCGd)" d="M28.701,34.195c0.501,0.276,0.995-0.358,0.608-0.779C28.185,32.194,26.458,31,24,31s-4.185,1.194-5.309,2.416c-0.387,0.421,0.107,1.055,0.608,0.779C20.45,33.559,22.024,33,24,33S27.55,33.559,28.701,34.195z"/><path fill="#805b2a" d="M36.457,18.998c-0.827-0.044-1.607-0.148-2.403-0.292c-0.792-0.146-1.578-0.339-2.357-0.584 c-1.551-0.501-3.088-1.233-4.413-2.402c-0.422-0.372-0.462-1.015-0.09-1.437s1.015-0.462,1.437-0.09 c0.029,0.026,0.056,0.052,0.081,0.08l0.006,0.007c0.916,1.013,2.161,1.819,3.517,2.425c1.356,0.598,2.841,1.047,4.309,1.297 l0.024,0.004c0.272,0.047,0.455,0.305,0.409,0.577C36.933,18.836,36.707,19.012,36.457,18.998z"/><path fill="#805b2a" d="M11.457,18.002c1.468-0.251,2.953-0.7,4.309-1.297c1.356-0.606,2.602-1.411,3.517-2.425l0.005-0.006 c0.377-0.417,1.021-0.45,1.438-0.073s0.45,1.021,0.073,1.438c-0.026,0.029-0.054,0.056-0.082,0.081 c-1.326,1.169-2.863,1.901-4.413,2.402c-0.779,0.245-1.566,0.439-2.357,0.584c-0.796,0.144-1.577,0.248-2.403,0.292 c-0.276,0.015-0.511-0.197-0.526-0.473c-0.014-0.256,0.168-0.477,0.415-0.519L11.457,18.002z"/></svg>`
         document.querySelector('.text-result').textContent = `NO WINNER !!! EQUALITY`
         document.querySelector('.modal-result-game').classList.toggle('visible')
@@ -377,11 +377,11 @@ const asWin = (idPlayer) => {
         return true
     } else {
         if (SumRowsPlayer(idPlayer)) {
- 
+
             return true
         } else {
             if (SumDiagonalPlayer(idPlayer)) {
-       
+
                 return true
             } else {
                 if (playCount === 9) {
@@ -390,7 +390,6 @@ const asWin = (idPlayer) => {
                 } else {
                     return false
                 }
-
             }
         }
     }
@@ -411,32 +410,85 @@ const UserPlay = (idPlayer, squareIndex) => {
 
 }
 
+const replayGame = () => {
+    if (MODE_GAME === "SINGLE PLAYER") {
+        if (playerConfig.defaultPlayer === 'ai') {
+            setTimeout(() => {
+                palyerSelect(0)
+                AIisPlay = true
+                Ai_Played()
+            }, 100)
+        } else {
+            palyerSelect(0)
+            AIisPlay = false
+        }
+    } else {
+        palyerSelect(0)
+    }
+
+}
+
 const resetGame = () => {
     document.querySelectorAll('.square-play').forEach(sqr => sqr.classList.remove('valid-square-win'))
-    playCount = 0
     document.querySelectorAll('.square-play').forEach(sqr => sqr.setAttribute('is-played', '0'))
-    //Player 1
-    playerProgressMultiPlayer.player1.column.col1 = []
-    playerProgressMultiPlayer.player1.column.col2 = []
-    playerProgressMultiPlayer.player1.column.col3 = []
+    if (MODE_GAME === "SINGLE PLAYER") {
+        GameProgressSinglePlayer = 0
+        AIisPlay = false;
+        GameEND = false;
+        positionAICanWin = 500
+        positionUSERCanWin = 500
+        sumUSerWin = 0
+        sumAiWin = 0
+        //AI Reset Array 
+        GameProgress.ai.column.col1 = []
+        GameProgress.ai.column.col2 = []
+        GameProgress.ai.column.col3 = []
 
-    playerProgressMultiPlayer.player1.row.row1 = []
-    playerProgressMultiPlayer.player1.row.row2 = []
-    playerProgressMultiPlayer.player1.row.row3 = []
+        GameProgress.ai.row.row1 = []
+        GameProgress.ai.row.row2 = []
+        GameProgress.ai.row.row3 = []
 
-    playerProgressMultiPlayer.player1.diagonal.diagonal1 = []
-    playerProgressMultiPlayer.player1.diagonal.diagonal2 = []
-    //Player 2
-    playerProgressMultiPlayer.player2.column.col1 = []
-    playerProgressMultiPlayer.player2.column.col2 = []
-    playerProgressMultiPlayer.player2.column.col3 = []
+        GameProgress.ai.diagonal.diagonal1 = []
+        GameProgress.ai.diagonal.diagonal2 = []
 
-    playerProgressMultiPlayer.player2.row.row1 = []
-    playerProgressMultiPlayer.player2.row.row2 = []
-    playerProgressMultiPlayer.player2.row.row3 = []
+        //User Reset Array 
+        GameProgress.user.column.col1 = []
+        GameProgress.user.column.col2 = []
+        GameProgress.user.column.col3 = []
 
-    playerProgressMultiPlayer.player2.diagonal.diagonal1 = []
-    playerProgressMultiPlayer.player2.diagonal.diagonal2 = []
+        GameProgress.user.row.row1 = []
+        GameProgress.user.row.row2 = []
+        GameProgress.user.row.row3 = []
+
+        GameProgress.user.diagonal.diagonal1 = []
+        GameProgress.user.diagonal.diagonal2 = []
+
+    } else {
+        playCount = 0
+        indexPlayer = 0
+        //Player 1
+        playerProgressMultiPlayer.player1.column.col1 = []
+        playerProgressMultiPlayer.player1.column.col2 = []
+        playerProgressMultiPlayer.player1.column.col3 = []
+
+        playerProgressMultiPlayer.player1.row.row1 = []
+        playerProgressMultiPlayer.player1.row.row2 = []
+        playerProgressMultiPlayer.player1.row.row3 = []
+
+        playerProgressMultiPlayer.player1.diagonal.diagonal1 = []
+        playerProgressMultiPlayer.player1.diagonal.diagonal2 = []
+        //Player 2
+        playerProgressMultiPlayer.player2.column.col1 = []
+        playerProgressMultiPlayer.player2.column.col2 = []
+        playerProgressMultiPlayer.player2.column.col3 = []
+
+        playerProgressMultiPlayer.player2.row.row1 = []
+        playerProgressMultiPlayer.player2.row.row2 = []
+        playerProgressMultiPlayer.player2.row.row3 = []
+
+        playerProgressMultiPlayer.player2.diagonal.diagonal1 = []
+        playerProgressMultiPlayer.player2.diagonal.diagonal2 = []
+    }
 }
 
 const gameInitial = () => {
@@ -444,8 +496,8 @@ const gameInitial = () => {
     document.querySelectorAll('.square-play').forEach((square, index) => {
         square.addEventListener('click', () => {
             if (MODE_GAME === "SINGLE PLAYER") {
-               User_Played(square,index)
-               
+                User_Played(square, index)
+
             } else {
                 if (playCount < 9) {
                     playCount++;
@@ -455,7 +507,7 @@ const gameInitial = () => {
                     MultiPlayerProgress(index, indexPlayer)
                     if (asWin(indexPlayer)) {
                         setTimeout(() => {
-                            console.log('WINNER !!!!!!!!!!!!!!!!!!!!!!!')
+                            //console.log('WINNER !!!!!!!!!!!!!!!!!!!!!!!')
                             document.querySelector('.avatar-result div').innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
                             <linearGradient id="OY51ZQaWw10MQX_Yc6Q2Ya" x1="39.001" x2="41.528" y1="29.5" y2="29.5" gradientUnits="userSpaceOnUse">
                                 <stop offset="0" stop-color="#c48f0c" />

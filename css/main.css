@@ -647,6 +647,68 @@ body * {
   color: #FFFFFF;
 }
 
+.modal-about-game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal-about-game .content {
+  background: #FFFFFF;
+  border-radius: 0.3rem;
+  padding: 25px;
+  overflow: hidden;
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 25px;
+}
+.modal-about-game .content .content-header {
+  display: flex;
+  flex: none;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-about-game .content .content-header span {
+  font-family: "RobotoCondensed-Bold";
+  color: #000000;
+  font-size: 1rem;
+}
+.modal-about-game .content .content-header svg {
+  flex: none;
+  height: 1.2rem;
+  width: 1.2rem;
+  cursor: pointer;
+}
+.modal-about-game .content .content-header svg * {
+  fill: #000000;
+}
+.modal-about-game .content .body {
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 35px;
+  overflow: hidden;
+}
+.modal-about-game .content .body p {
+  color: #000000;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.modal-about-game .content .close-modal {
+  background: #003F6C;
+  color: #FFFFFF;
+}
+
 .home-tab-container {
   display: flex;
   flex-direction: column;

@@ -827,7 +827,7 @@ async function UserAvailablePositionToWinInDiagonal() {
                 return a + b
             }, 0)
             if (posWin === 15) {
-                console.log('Déjà gagné')
+                //                console.log('Déjà gagné')
                 posResult = 120
                 return false
             } else {
@@ -863,7 +863,7 @@ async function UserAvailablePositionToWinInDiagonal() {
                     return a + b
                 }, 0)
                 if (posWin === 15) {
-                    console.log('Déjà gagné')
+                    //                    console.log('Déjà gagné')
                     posResult = 120
                     return false
                 } else {
@@ -976,7 +976,7 @@ function canWinInColumn(pos, playerName) {
                 }, 0)
 
                 if (sumResult === 0) {
-                    console.log(`Inutile de jouer à la position ${pos} car le tableau est actuellement vide`)
+                    //                    console.log(`Inutile de jouer à la position ${pos} car le tableau est actuellement vide`)
                 } else {
                     posIncr = pos + 1
 
@@ -987,19 +987,19 @@ function canWinInColumn(pos, playerName) {
                         s = r - 1
 
                         if (isAvailablePositionToPlay(s)) {
-                            console.log(`l'ia  pourra  gagne en colonne 1 à la position ${r-1} qui est disponible`)
+                            //                            console.log(`l'ia  pourra  gagne en colonne 1 à la position ${r-1} qui est disponible`)
                             posResultReturn = s.toString()
 
 
                         } else {
-                            console.log(`l'ia ne pourra pas gagne en colonne 1 à la position ${r-1} qui est indisponible`)
+                            //                            console.log(`l'ia ne pourra pas gagne en colonne 1 à la position ${r-1} qui est indisponible`)
 
                         }
                     }
                 }
 
             } else {
-                console.log(`L'IA ne peut gagner en colonne 1 si elle joue la position ${pos}`)
+                //                console.log(`L'IA ne peut gagner en colonne 1 si elle joue la position ${pos}`)
 
             }
         } else {
@@ -1025,17 +1025,17 @@ function canWinInColumn(pos, playerName) {
                         r = 15 - r
                         s = r - 1
                         if (isAvailablePositionToPlay(s)) {
-                            console.log(`l'ia  pourra  gagne en colonne 2 à la position ${r-1} qui est disponible`)
+                            //console.log(`l'ia  pourra  gagne en colonne 2 à la position ${r-1} qui est disponible`)
                             posResultReturn = s.toString()
                         } else {
-                            console.log(`l'ia ne pourra pas gagne en colonne 2 à la position ${r-1} qui est indisponible`)
+                            //                            console.log(`l'ia ne pourra pas gagne en colonne 2 à la position ${r-1} qui est indisponible`)
 
                         }
                     }
                 }
 
             } else {
-                console.log(`L'IA ne peut gagner en colonne 2 si elle joue la position ${pos}`)
+                //console.log(`L'IA ne peut gagner en colonne 2 si elle joue la position ${pos}`)
 
             }
         } else {
@@ -1061,17 +1061,17 @@ function canWinInColumn(pos, playerName) {
                         r = 12 - r
                         s = r - 1
                         if (isAvailablePositionToPlay(s)) {
-                            console.log(`l'ia  pourra  gagne en colonne 3 à la position ${r-1} qui est disponible`)
+                            //console.log(`l'ia  pourra  gagne en colonne 3 à la position ${r-1} qui est disponible`)
                             posResultReturn = s.toString()
                         } else {
-                            console.log(`l'ia ne pourra pas gagne en colonne 3 à la position ${r-1} qui est indisponible`)
+                            //                            console.log(`l'ia ne pourra pas gagne en colonne 3 à la position ${r-1} qui est indisponible`)
 
                         }
                     }
                 }
 
             } else {
-                console.log(`L'IA ne peut gagner en colonne 3 si elle joue la position ${pos}`)
+                //console.log(`L'IA ne peut gagner en colonne 3 si elle joue la position ${pos}`)
 
             }
         } else {
@@ -1080,10 +1080,10 @@ function canWinInColumn(pos, playerName) {
     })();
 
     if (posResultReturn === '') {
-        console.log('500')
+        //console.log('500')
         return '500'
     } else {
-        console.log('no 500')
+        //console.log('no 500')
         return posResultReturn
     }
 
@@ -1105,7 +1105,7 @@ function canWinInRow(pos, playerName) {
                 }, 0)
 
                 if (sumResult === 0) {
-                    console.log(`Inutile de jouer à la position ${pos} car le tableau est actuellement vide`)
+                    //                    console.log(`Inutile de jouer à la position ${pos} car le tableau est actuellement vide`)
                 } else {
                     posIncr = pos + 1
 
@@ -1116,19 +1116,19 @@ function canWinInRow(pos, playerName) {
                         s = r - 1
 
                         if (isAvailablePositionToPlay(s)) {
-                            console.log(`l'ia  pourra  gagne en ligne 1 à la position ${r-1} qui est disponible`)
+                            //                            console.log(`l'ia  pourra  gagne en ligne 1 à la position ${r-1} qui est disponible`)
                             posResultReturn = s.toString()
 
 
                         } else {
-                            console.log(`l'ia ne pourra pas gagne en ligne 1 à la position ${r-1} qui est indisponible`)
+                            //                            console.log(`l'ia ne pourra pas gagne en ligne 1 à la position ${r-1} qui est indisponible`)
 
                         }
                     }
                 }
 
             } else {
-                console.log(`L'IA ne peut gagner en ligne 1 si elle joue la position ${pos}`)
+                //                console.log(`L'IA ne peut gagner en ligne 1 si elle joue la position ${pos}`)
 
             }
         } else {
@@ -1190,17 +1190,17 @@ function canWinInRow(pos, playerName) {
                         r = 24 - r
                         s = r - 1
                         if (isAvailablePositionToPlay(s)) {
-                            console.log(`l'ia  pourra  gagne en ligne 3 à la position ${r-1} qui est disponible`)
+                            //                            console.log(`l'ia  pourra  gagne en ligne 3 à la position ${r-1} qui est disponible`)
                             posResultReturn = s.toString()
                         } else {
-                            console.log(`l'ia ne pourra pas gagne en ligne 3 à la position ${r-1} qui est indisponible`)
+                            //                            console.log(`l'ia ne pourra pas gagne en ligne 3 à la position ${r-1} qui est indisponible`)
 
                         }
                     }
                 }
 
             } else {
-                console.log(`L'IA ne peut gagner en ligne 3 si elle joue la position ${pos}`)
+                //                console.log(`L'IA ne peut gagner en ligne 3 si elle joue la position ${pos}`)
 
             }
         } else {
@@ -1209,10 +1209,10 @@ function canWinInRow(pos, playerName) {
     })();
 
     if (posResultReturn === '') {
-        console.log('500')
+        //        console.log('500')
         return '500'
     } else {
-        console.log('no 500')
+        //        console.log('no 500')
         return posResultReturn
     }
 
@@ -1235,7 +1235,7 @@ function canWinInDiagonal(pos, playerName) {
                 }, 0)
 
                 if (sumResult === 0) {
-                    console.log(`Inutile de jouer à la position ${pos} car le tableau est actuellement vide`)
+                    //                    console.log(`Inutile de jouer à la position ${pos} car le tableau est actuellement vide`)
                 } else {
                     posIncr = pos + 1
 
@@ -1246,19 +1246,19 @@ function canWinInDiagonal(pos, playerName) {
                         s = r - 1
 
                         if (isAvailablePositionToPlay(s)) {
-                            console.log(`l'ia  pourra  gagne en diagonale 1 à la position ${r-1} qui est disponible`)
+                            //                            console.log(`l'ia  pourra  gagne en diagonale 1 à la position ${r-1} qui est disponible`)
                             posResultReturn = s.toString()
 
 
                         } else {
-                            console.log(`l'ia ne pourra pas gagne en diagonale 1 à la position ${r-1} qui est indisponible`)
+                            //                            console.log(`l'ia ne pourra pas gagne en diagonale 1 à la position ${r-1} qui est indisponible`)
 
                         }
                     }
                 }
 
             } else {
-                console.log(`L'IA ne peut gagner en diagonale 1 si elle joue la position ${pos}`)
+                //                console.log(`L'IA ne peut gagner en diagonale 1 si elle joue la position ${pos}`)
 
             }
         } else {
@@ -1284,17 +1284,17 @@ function canWinInDiagonal(pos, playerName) {
                         r = 15 - r
                         s = r - 1
                         if (isAvailablePositionToPlay(s)) {
-                            console.log(`l'ia  pourra  gagne en diagonale 2 à la position ${r-1} qui est disponible`)
+                            //                            console.log(`l'ia  pourra  gagne en diagonale 2 à la position ${r-1} qui est disponible`)
                             posResultReturn = s.toString()
                         } else {
-                            console.log(`l'ia ne pourra pas gagne en diagonale 2 à la position ${r-1} qui est indisponible`)
+                            //                            console.log(`l'ia ne pourra pas gagne en diagonale 2 à la position ${r-1} qui est indisponible`)
 
                         }
                     }
                 }
 
             } else {
-                console.log(`L'IA ne peut gagner en diagonale 2 si elle joue la position ${pos}`)
+                //                console.log(`L'IA ne peut gagner en diagonale 2 si elle joue la position ${pos}`)
 
             }
         } else {
@@ -1302,31 +1302,31 @@ function canWinInDiagonal(pos, playerName) {
         }
     })();
     if (posResultReturn === '') {
-        console.log('500')
+        //        console.log('500')
         return '500'
     } else {
-        console.log('no 500')
+        //        console.log('no 500')
         return posResultReturn
     }
 }
 
 function inspectorePosWinRow(position) {
     let WinRow = canWinInRow(position, "ai")
-    console.log(`valeur ligne win :${WinRow}`)
+    //console.log(`valeur ligne win :${WinRow}`)
     return WinRow
 
 }
 
 function inspectorePosWinCol(position) {
     let WinCol = canWinInColumn(position, "ai")
-    console.log(`valeur colonne win :${WinCol}`)
+    //console.log(`valeur colonne win :${WinCol}`)
     return WinCol
 
 }
 
 function inspectorePosWinDiagonal(position) {
     let WinDiagonal = canWinInDiagonal(position, "ai")
-    console.log(`valeur diagonal win :${WinDiagonal}`)
+    //console.log(`valeur diagonal win :${WinDiagonal}`)
     return WinDiagonal
 
 }
@@ -1338,22 +1338,22 @@ function getPosWinAI(col, row, diagonal) {
     let arrayPos
     let DuplicatesValues = []
     if (col !== '500') {
-        console.log('col yes' + col)
+        //        console.log('col yes' + col)
         Column = col.split('#')
     }
     if (row !== '500') {
-        console.log('r yes' + row)
+        //        console.log('r yes' + row)
         Rows = row.split('#')
     }
     if (diagonal !== '500') {
-        console.log('d yes' + diagonal)
+        //        console.log('d yes' + diagonal)
         Diagonal = diagonal.split('#')
     }
-    console.log(`Array col ${Column.length}`)
-    console.log(`Array Rows ${Rows.length}`)
-    console.log(`Array Diagonal ${Diagonal.length}`)
+    //    console.log(`Array col ${Column.length}`)
+    //    console.log(`Array Rows ${Rows.length}`)
+    //    console.log(`Array Diagonal ${Diagonal.length}`)
     if (Column.length > 0) {
-        console.log('ll')
+
         if (Rows.length > 0) {
             if (Diagonal.length > 0) {
                 arrayPos = Column.concat(Rows, Diagonal)
@@ -1367,26 +1367,24 @@ function getPosWinAI(col, row, diagonal) {
             arrayPos = Column
         }
     } else if (Rows.length > 0) {
-        console.log('sss')
+
         if (Diagonal.length > 0) {
             arrayPos = Rows.concat(Diagonal)
         } else {
             arrayPos = Rows
         }
     } else if (Diagonal.length > 0) {
-        console.log('qq')
+
         arrayPos = Diagonal
     } else {
-        console.log('55')
+
         arrayPos = []
     }
-    console.log('array pos' + arrayPos)
     if (arrayPos.length === 0) {
-        console.log('Aucune position à analyser')
         return false;
     } else {
         let valuePos = arrayPos.sort()
-        console.log(`les valeurs des positions disponible ${valuePos}`)
+        //        console.log(`les valeurs des positions disponible ${valuePos}`)
         for (let i = 0; i < valuePos.length; i++) {
             if (valuePos[i] === valuePos[i + 1]) {
                 DuplicatesValues.push(valuePos[i])
@@ -1394,10 +1392,10 @@ function getPosWinAI(col, row, diagonal) {
         }
 
         if (DuplicatesValues.length === 0) {
-            console.log('pas des positions optimales pour gagner' + valuePos[valuePos.length - 1])
+            //            console.log('pas des positions optimales pour gagner' + valuePos[valuePos.length - 1])
             return getRandomPos(valuePos)
         } else {
-            console.log(`les valeurs des positions optimales pour gagner ${DuplicatesValues}`)
+            //            console.log(`les valeurs des positions optimales pour gagner ${DuplicatesValues}`)
             return DuplicatesValues[0]
         }
 
@@ -1414,9 +1412,9 @@ function getBestPositionPlay() {
     let resultCol = ''
     let resultRow = ''
     let resultD = ''
-    console.log('les positions disponibles : \n' + posAvailable)
+    //console.log('les positions disponibles : \n' + posAvailable)
     posAvailable.forEach(pos => {
-        console.log(`POSITION ACTUELLEMENT DEMANDEE ${pos}`)
+        //console.log(`POSITION ACTUELLEMENT DEMANDEE ${pos}`)
         resultCol = inspectorePosWinCol(pos)
         resultRow = inspectorePosWinRow(pos)
         resultD = inspectorePosWinDiagonal(pos)
@@ -1444,21 +1442,21 @@ function getBestPositionPlay() {
 
     })
     if (resultColumn !== '') {
-        console.log(`POSITION POUR GAGNER PAR l'IA en COLONNE \n ${resultColumn}`)
+        //        console.log(`POSITION POUR GAGNER PAR l'IA en COLONNE \n ${resultColumn}`)
     } else {
-        console.log('Aucune position pour gagner en colonne!!!')
+        //        console.log('Aucune position pour gagner en colonne!!!')
         resultColumn = "500"
     }
     if (resultRows !== '') {
-        console.log(`POSITION POUR GAGNER PAR l'IA en Ligne \n ${resultRows}`)
+        //        console.log(`POSITION POUR GAGNER PAR l'IA en Ligne \n ${resultRows}`)
     } else {
-        console.log('Aucune position pour gagner en Ligne!!!')
+        //        console.log('Aucune position pour gagner en Ligne!!!')
         resultRows = "500"
     }
     if (resultDiagonals !== '') {
-        console.log(`POSITION POUR GAGNER PAR l'IA en Diagonale \n ${resultDiagonals}`)
+        //        console.log(`POSITION POUR GAGNER PAR l'IA en Diagonale \n ${resultDiagonals}`)
     } else {
-        console.log('Aucune position pour gagner en Diagonale!!!')
+        //        console.log('Aucune position pour gagner en Diagonale!!!')
         resultDiagonals = "500"
     }
     let result = getPosWinAI(resultColumn, resultRows, resultDiagonals)
@@ -1713,7 +1711,7 @@ function Ai_Played() {
                 AIisPlay = false;
             }, 100)
         } else {
-            console.log('logic played AI...')
+            //console.log('logic played AI...')
             getAvailablePositionAIWin()
             setTimeout(() => {
                 if (positionAICanWin < 100) {
@@ -1721,7 +1719,7 @@ function Ai_Played() {
                     SetProgessAI(positionAICanWin)
                     AIplay(positionAICanWin)
                     AIIsWin()
-                    console.log('AI IS WINNER !!!!!!')
+                    //console.log('AI IS WINNER !!!!!!')
                 } else {
                     getAvailablePositionUserWin()
                     //console.log(`AUCUNE POSITION POUR GAGNER positionAICanWin = ${positionAICanWin}`)
@@ -1734,13 +1732,13 @@ function Ai_Played() {
                             palyerSelect(NextPlayer)
                             AIisPlay = false;
                             if (GameProgressSinglePlayer === 9) {
-                                console.log('GAME END')
+                                //console.log('GAME END')
                                 EqualityGame()
                             }
 
                         } else {
                             //console.log(`AUCUNE POSITION POUR GAGNER PAR L'UTILISATEUR positionAICanWin = ${positionUSERCanWin}`)
-                            console.log('GET THE BEST POSITION TO PLAY')
+                            //console.log('GET THE BEST POSITION TO PLAY')
                             if (GameProgressSinglePlayer === 8) {
                                 //une seule case disponible
                                 let posToplay = getAllPositionAvailable()
@@ -1749,21 +1747,18 @@ function Ai_Played() {
                                     AIplay(posToplay[0])
                                     GameProgressSinglePlayer = 9
                                     AIisPlay = false;
-                                    console.log('GAME END')
+                                    //console.log('GAME END')
                                     EqualityGame()
                                 }
                             } else {
-                                console.log('SEARCH THE BEST POSITION TO WIN')
+                                //console.log('SEARCH THE BEST POSITION TO WIN')
                                 let posPlayAI = getBestPositionPlay()
                                 SetProgessAI(posPlayAI)
                                 AIplay(posPlayAI)
                                 GameProgressSinglePlayer++
                                 palyerSelect(NextPlayer)
                                 AIisPlay = false;
-
-
                             }
-
 
                         }
                     }, 600)
@@ -1772,7 +1767,7 @@ function Ai_Played() {
         }
 
     } else {
-        console.log('GAME END')
+        //console.log('GAME END')
         EqualityGame()
     }
 
@@ -1858,7 +1853,6 @@ function User_Played(SquareSelect, IndexSquareSelect) {
                         document.querySelector('.text-result').textContent = `YOU WINNER `
                         document.querySelector('.modal-result-game').classList.toggle('visible')
                     }, 500)
-                    console.log('USER WINNNER')
                 } else {
                     if (GameProgressSinglePlayer === 9) {
                         EqualityGame()
@@ -1881,7 +1875,6 @@ function User_Played(SquareSelect, IndexSquareSelect) {
         }
 
     } else {
-        console.log('GAME END')
         EqualityGame()
     }
 }

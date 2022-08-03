@@ -703,6 +703,13 @@ body * {
   color: #000000;
   font-size: 1rem;
   line-height: 1.5rem;
+  text-align: justify;
+}
+.modal-about-game .content .body i {
+  align-self: center;
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 .modal-about-game .content .close-modal {
   background: #003F6C;
@@ -715,6 +722,7 @@ body * {
   justify-content: center;
   align-items: center;
   grid-row-gap: 50px;
+  height: 100%;
 }
 .home-tab-container .logo-app {
   flex: none;
@@ -722,8 +730,14 @@ body * {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  height: 8rem;
-  width: 8rem;
+  flex: none;
+}
+.home-tab-container .logo-app svg {
+  height: 5.5rem;
+  width: 5.5rem;
+}
+.home-tab-container .logo-app svg * {
+  fill: #FFFFFF;
 }
 .home-tab-container .logo-app img {
   flex: none;

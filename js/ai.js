@@ -1850,7 +1850,7 @@ function User_Played(SquareSelect, IndexSquareSelect) {
                             <path fill="url(#OY51ZQaWw10MQX_Yc6Q2Yh)" d="M18,25.575c1.4,0,2.742,0.238,4,0.659C21.165,24.897,19.692,24,18,24s-3.165,0.897-4,2.234C15.258,25.813,16.6,25.575,18,25.575z" />
                         </svg>
 `
-                        document.querySelector('.text-result').textContent = `YOU WINNER `
+                        document.querySelector('.text-result').textContent = `YOU ARE A WINNER `
                         document.querySelector('.modal-result-game').classList.toggle('visible')
                     }, 500)
                 } else {
